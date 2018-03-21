@@ -71,8 +71,21 @@ An animation util for android . Easy to build complicated animations.<br>
                 .start{
                 LogUtil.i(TAG,"Done")  //动画结束回调 
                 }
-                
-                
+                
+
+支持的动画类型
+-------
+         translateTo(fromX:Float,fromY:Float,toX:Float,toY:Float)//移动
+
+         rotate(fromRotation:Float,toRotation:Float)//绕Z轴旋转
+
+         rotateX(fromRotation:Float,toRotation: Float)//绕X轴旋转
+        
+         rotateY(fromRotation: Float,toRotation: Float)//绕Y轴旋转
+
+         alpha(fromAlpha:Float,toAlpha:Float)//透明度改变
+        
+         scale(fromScaleX:Float,fromScaleY:Float,toScaleX:Float,toScaleY:Float)//缩放动画
 <br>
 欢迎使用，欢迎反馈。<br>
 邮箱：1012025958@qq.com<br>
