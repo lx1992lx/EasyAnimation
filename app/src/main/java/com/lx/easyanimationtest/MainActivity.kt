@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
                     .connect()
                     .scale(1f,1f,1.6f,1.6f)
                     .build(1000,AccelerateDecelerateInterpolator())
+                    .connect()
+                    .translateTo(0f,0f,100f,100f)
                     .start {
                 Toast.makeText(this, "完成", Toast.LENGTH_SHORT).show()
             }
