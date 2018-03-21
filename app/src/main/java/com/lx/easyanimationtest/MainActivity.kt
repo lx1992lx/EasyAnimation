@@ -13,8 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         tv.setOnClickListener {
-            EasyAnimation
-                    .at(tv)
+            EasyAnimation.at(tv)
                     .rotate(0f, 360f)
                     .build(1000,AccelerateDecelerateInterpolator())
                     .connect()

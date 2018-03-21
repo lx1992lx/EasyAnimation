@@ -92,7 +92,7 @@ class AnimationActionControl(private var mView: View) : IAnimAction {
      * @interpolator 动画组共享插值器
      */
     override fun build(duration: Long, interpolator: Interpolator?): IAnimStart {
-        if(mAnimList.size==0)
+        if(mAnimList.size==0) throw IllegalStateException("you need add some animation before call build()")
         mAnimList.forEach {
             it.duration = duration
             it.interpolator = interpolator
